@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tinos', serif;
+    background-color: white;
+}
+#preloader{
+    background: var(--skin-color1) url(preloader.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 15%;
+    top: 0%; 
+}
+.main{
+    width: 80%;
+    margin: auto;
+}
+.main h1{
+    margin: 5vh 0;
+}
+.main h1::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: red;
+    left: 10%;
+    margin-top: 40px;
+}
+
+.main .map{
+    text-align: center;
+}
+.kab{
+    width: 80%;
+    margin: auto;
+    margin-top: 7vh;
+
+}
+.kab h1{
+    margin-bottom: 3vh;
+}
+
+.kab p{
+    width: 50vh;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.des{
+    margin-top: 10vh;
+}
+.des h1{
+    text-align: center;
+}
+.des h1::before{
+    content: '';
+    position: absolute;
+    width: 230px;
+    height: 3px;
+    background-color: red;
+    margin-top: 40px;
+}
+.des .gallery{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 90%;
+}
+.des .gallery .img{
+    width: calc(100%/3);
+    padding: 7px;
+}
+.des .gallery .img span{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+}
+.des .gallery .img img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+.des .gallery .img p{
+    margin-top: 5px;
+    margin-bottom: 3vh;
+}
+@media only screen and (max-width: 800px) {
+    .des h1{
+        margin-bottom: 5vh;
+    }
+    .des .gallery{
+        text-align: center;
+        margin: auto;
+    }
+    .des .gallery .img{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+
+    }
+  }
+
+
+.footer{
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+}
